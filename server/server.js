@@ -14,7 +14,13 @@ const SECRET = process.env.JWT_SECRET || "mysecretkey";
 app.use(express.json());
 app.use(cookieParser());
 // credentials:true => cookie frontend se aa/ja sakti hai
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+//app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(
+  cors({
+    origin: process.env.FRONTEND_URL,
+    credentials: true,
+  })
+);
 
 mongoose
   .connect(process.env.MONGO_URL || "mongodb://127.0.0.1:27017/jobportal")
