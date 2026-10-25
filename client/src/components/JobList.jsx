@@ -12,7 +12,7 @@ export default function JobList() {
 
   const getJobs = async () => {
     let result = await fetch(
-      "http://localhost:3200/jobs?search=" + encodeURIComponent(search),
+      "https://job-portal-u8sg.onrender.com/jobs?search=" + encodeURIComponent(search),
       { credentials: "include" }
     );
     result = await result.json();
@@ -25,7 +25,7 @@ export default function JobList() {
   };
 
   const applyJob = async (id) => {
-    let result = await fetch("http://localhost:3200/apply/" + id, {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/apply/" + id, {
       method: "POST",
       credentials: "include",
     });

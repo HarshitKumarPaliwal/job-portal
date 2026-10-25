@@ -13,7 +13,7 @@ export default function Login() {
   }, []);
 
   const handleLogin = async () => {
-    let result = await fetch("http://localhost:3200/login", {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/login", {
       method: "POST",
       body: JSON.stringify(useData),
       headers: { "Content-Type": "application/json" },

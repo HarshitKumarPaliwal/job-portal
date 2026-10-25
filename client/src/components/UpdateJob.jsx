@@ -13,7 +13,7 @@ export default function UpdateJob() {
 
   // pehle purana data laao taki form me bhar jaye
   const getJob = async () => {
-    let result = await fetch("http://localhost:3200/jobs/" + id, {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/jobs/" + id, {
       credentials: "include",
     });
     result = await result.json();
@@ -25,7 +25,7 @@ export default function UpdateJob() {
   };
 
   const handleUpdate = async () => {
-    let result = await fetch("http://localhost:3200/update-job", {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/update-job", {
       method: "PUT",
       credentials: "include",
       body: JSON.stringify(jobdata), // _id bhi isme hai

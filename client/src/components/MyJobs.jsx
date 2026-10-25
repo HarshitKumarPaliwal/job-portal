@@ -10,7 +10,7 @@ export default function MyJobs() {
   }, []);
 
   const getMyJobs = async () => {
-    let result = await fetch("http://localhost:3200/my-jobs", {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/my-jobs", {
       credentials: "include",
     });
     result = await result.json();
@@ -25,7 +25,7 @@ export default function MyJobs() {
   const deleteJob = async (id) => {
     if (!window.confirm("Job delete karni hai?")) return;
 
-    let result = await fetch("http://localhost:3200/delete-job/" + id, {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/delete-job/" + id, {
       method: "DELETE",
       credentials: "include",
     });

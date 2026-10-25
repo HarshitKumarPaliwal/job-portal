@@ -9,7 +9,7 @@ export default function MyApplications() {
   }, []);
 
   const getApplications = async () => {
-    let result = await fetch("http://localhost:3200/my-applications", {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/my-applications", {
       credentials: "include",
     });
     result = await result.json();

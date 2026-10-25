@@ -7,7 +7,7 @@ export default function PostJob() {
   const navigate = useNavigate();
 
   const handleAddJob = async () => {
-    let result = await fetch("http://localhost:3200/add-job", {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/add-job", {
       method: "POST",
       body: JSON.stringify(jobdata),
       credentials: "include",

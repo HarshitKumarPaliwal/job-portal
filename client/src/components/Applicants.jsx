@@ -12,7 +12,7 @@ export default function Applicants() {
   }, []);
 
   const getApplicants = async () => {
-    let result = await fetch("http://localhost:3200/applicants/" + id, {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/applicants/" + id, {
       credentials: "include",
     });
     result = await result.json();

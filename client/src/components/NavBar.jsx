@@ -14,7 +14,7 @@ function NavBar() {
     setRole(null);
 
     // server se cookie bhi delete karo
-    await fetch("http://localhost:3200/logout", {
+    await fetch("https://job-portal-u8sg.onrender.com/logout", {
       method: "POST",
       credentials: "include",
     });

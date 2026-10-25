@@ -14,7 +14,7 @@ export default function SignUp() {
   }, []);
 
   const handleSignUp = async () => {
-    let result = await fetch("http://localhost:3200/signup", {
+    let result = await fetch("https://job-portal-u8sg.onrender.com/signup", {
       method: "POST",
       body: JSON.stringify(useData),
       headers: { "Content-Type": "application/json" },
