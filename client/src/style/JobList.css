@@ -1,0 +1,54 @@
+.search-box{
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 0 20px;
+}
+.search-box input{
+    margin-bottom: 0;
+}
+.search-btn{
+    width: 120px;
+}
+.job-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.job-card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.job-card h3{
+    margin: 0;
+}
+.company{
+    color: #3e37ab;
+    font-weight: bold;
+}
+.badge{
+    background: #e6e4ff;
+    color: #3e37ab;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+.desc{
+    color: #555;
+    font-size: 14px;
+}
+.apply-btn{
+    margin-top: 10px;
+}
+.apply-btn:disabled{
+    background: #999;
+    cursor: not-allowed;
+}
+.empty{
+    text-align: center;
+    color: #777;
+}

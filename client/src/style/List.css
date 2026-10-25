@@ -1,0 +1,47 @@
+.my-list{
+    display: grid;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 20px;
+}
+.four-col{ grid-template-columns: 50px 1fr 1fr 1fr; }
+.five-col{ grid-template-columns: 50px 1fr 1fr 1fr 1.5fr; }
+
+.List-header{
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #3e37ab;
+    color: #fff;
+}
+.List-item{
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+.actions{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.delete-item, .update-item, .view-item{
+    width: auto;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.delete-item{ background-color: red; }
+.delete-item:hover{ background-color: #931d1d; color: white; }
+.update-item{ background-color: #c9a800; }
+.update-item:hover{ background-color: #7f931d; }
+.view-item{ background-color: #3e37ab; }
+.view-item:hover{ background-color: #2a2480; }
+.empty{
+    text-align: center;
+    color: #777;
+}
